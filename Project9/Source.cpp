@@ -126,6 +126,8 @@ public:
 			int j = 1;
 			while (j < numC + 2)
 			{
+				nonZeroCount = 0;
+				flag = false;
 				if (aryOne[i][j] > 0 && aryOne[i - 1][j] == 0) {
 					nonZeroCount = loadNeighborAry(i, j, de);
 					flag = checkConnector();
@@ -156,6 +158,8 @@ public:
 			int j = 1;
 			while (j < numC + 2)
 			{
+				nonZeroCount = 0;
+				flag = false;
 				if (aryOne[i][j] > 0 && aryOne[i + 1][j] == 0) {
 					nonZeroCount = loadNeighborAry(i, j, de);
 					flag = checkConnector();
@@ -186,6 +190,8 @@ public:
 			int j = 1;
 			while (j < numC + 2)
 			{
+				nonZeroCount = 0;
+				flag = false;
 				if (aryOne[i][j] > 0 && aryOne[i][j-1] == 0) {
 					nonZeroCount = loadNeighborAry(i, j, de);
 					flag = checkConnector();
@@ -216,6 +222,8 @@ public:
 			int j = 1;
 			while (j < numC + 2)
 			{
+				nonZeroCount = 0;
+				flag = false;
 				if (aryOne[i][j] > 0 && aryOne[i ][j+1] == 0) {
 					nonZeroCount = loadNeighborAry(i, j,de);
 					flag = checkConnector();
